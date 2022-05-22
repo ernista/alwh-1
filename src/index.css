@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.register-scroll::-webkit-scrollbar {
+    width: 12px;
+}
+
+.register-scroll::-webkit-scrollbar-track {
+    background: orange;
+}
+
+.register-scroll::-webkit-scrollbar-thumb {
+    background-color: blue;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid orange;
+    /* creates padding around scroll thumb */
+}
+
+html {
+    @apply overflow-x-hidden
+}
+
+.btn-primary {
+    @apply bg-white px-8 py-2 rounded
+}
+
+.btn-secondary {
+    @apply text-white border border-white px-4 py-2 rounded
+}
+
+.form-control {
+    @apply px-4 py-2 border border-2 rounded outline-none focus:border-green-500 duration-200
+}
