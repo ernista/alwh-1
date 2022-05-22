@@ -24,8 +24,8 @@ export const Landing = () => {
                     </div>
                     { 
                         active === true  
-                            ?  <XIcon className="h-8 text-white" onClick={() => setActive(false)} />
-                            : <MenuAlt2Icon className="h-8 text-white" onClick={() => setActive(true)} />
+                            ?  <XIcon className="h-8 lg:hidden text-white" onClick={() => setActive(false)} />
+                            : <MenuAlt2Icon className="h-8 lg:hidden text-white" onClick={() => setActive(true)} />
                     }
                 </div>
 
